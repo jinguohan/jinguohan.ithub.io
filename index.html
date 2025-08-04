@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>懒人祝福语</title>
+    <style>
+        /* 优化移动端样式 */
+        body {
+            font-family: "微软雅黑", Arial, sans-serif;
+            margin: 5px;
+            background-color: #fff9e6;
+        }
+
+        .container {
+            background-color: white;
+            padding: 7px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+          .row {
+        display: flex;
+        flex-direction: row; /* 始终水平布局 */
+        align-items: center; /* 垂直居中 */
+        justify-content: space-between; /* 元素两端对齐 */
+        margin: 10px 0;
+        padding: 12px;
+        background-color: #fff3cd;
+        border-radius: 5px;
+    }
+
+    .text {
+        color: #d60000;
+        font-size: 16px;
+        flex: 1; /* 占据剩余空间 */
+        margin-right: 15px; /* 添加右边距 */
+        word-break: break-all; /* 长文本自动换行 */
+    }
+
+    .copy-btn {
+        padding: 8px 20px;
+        background-color: #d60000;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        flex-shrink: 0; /* 防止按钮缩小 */
+    }
+
+        .copy-btn.copied {
+            background-color: #28a745;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d60000;
+            margin:10px 0;
+            font-size: 1.8em; /* 移动端标题缩小 */
+        }
+
+        /* 隐藏的文本域用于复制 */
+        #copyHelper {
+            position: fixed;
+            left: -9999px;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>懒人祝福语</h1>
+        <div id="blessingsContainer">
+            <!-- 示例条目（实际需补全50条） -->
+ <div class="row">
+    <span class="text">1. 激动人心的暑期要来啦</span>
+    <button class="copy-btn" data-text="激动人心的暑期要来啦">复制</button>
+</div>
+<div class="row">
+    <span class="text">2. 这个暑期大家怎么安排</span>
+    <button class="copy-btn" data-text="这个暑期大家怎么安排">复制</button>
+</div>
+<div class="row">
+    <span class="text">3. 去海边是个不错的选择</span>
+    <button class="copy-btn" data-text="去海边是个不错的选择">复制</button>
+</div>
+<div class="row">
+    <span class="text">4. 海风轻拂笑声满途</span>
+    <button class="copy-btn" data-text="海风轻拂笑声满途">复制</button>
+</div>
+<div class="row">
+    <span class="text">5. 暑期逐浪乐一夏</span>
+    <button class="copy-btn" data-text="暑期逐浪乐一夏">复制</button>
+</div>
+<div class="row">
+    <span class="text">6. 赤足踏浪沙暖风轻</span>
+    <button class="copy-btn" data-text="赤足踏浪沙暖风轻">复制</button>
+</div>
+<div class="row">
+    <span class="text">7. 盛夏进行时</span>
+    <button class="copy-btn" data-text="盛夏进行时">复制</button>
+</div>
+<div class="row">
+    <span class="text">8. 怎么办我已经闻到海风的味道了</span>
+    <button class="copy-btn" data-text="怎么办我已经闻到海风的味道了">复制</button>
+</div>
+<div class="row">
+    <span class="text">9. 暑期心飞扬</span>
+    <button class="copy-btn" data-text="暑期心飞扬">复制</button>
+</div>
+<div class="row">
+    <span class="text">10. 还有什么比夏天在水里玩更开心的呢</span>
+    <button class="copy-btn" data-text="还有什么比夏天在水里玩更开心的呢">复制</button>
+</div>
+<div class="row">
+    <span class="text">11. 夏天更要动起来</span>
+    <button class="copy-btn" data-text="夏天更要动起来">复制</button>
+</div>
+<div class="row">
+    <span class="text">12. 放下手机走出空调房</span>
+    <button class="copy-btn" data-text="放下手机走出空调房">复制</button>
+</div>
+<div class="row">
+    <span class="text">13. 拥抱自然的同时要注意防晒</span>
+    <button class="copy-btn" data-text="拥抱自然的同时要注意防晒">复制</button>
+</div>
+<div class="row">
+    <span class="text">14. 快乐暑期天天开心</span>
+    <button class="copy-btn" data-text="快乐暑期天天开心">复制</button>
+</div>
+<div class="row">
+    <span class="text">15. 朋友们你们放假吗</span>
+    <button class="copy-btn" data-text="朋友们你们放假吗">复制</button>
+</div>
+<div class="row">
+    <span class="text">16. 不放假也要给自己创造假期</span>
+    <button class="copy-btn" data-text="不放假也要给自己创造假期">复制</button>
+</div>
+<div class="row">
+    <span class="text">17. 炎热的夏天和沙滩最配了</span>
+    <button class="copy-btn" data-text="炎热的夏天和沙滩最配了">复制</button>
+</div>
+<div class="row">
+    <span class="text">18. 暑期转眼就来到忧愁烦恼都赶跑</span>
+    <button class="copy-btn" data-text="暑期转眼就来到忧愁烦恼都赶跑">复制</button>
+</div>
+<div class="row">
+    <span class="text">19. 暑期来临让烦恼歇歇班</span>
+    <button class="copy-btn" data-text="暑期来临让烦恼歇歇班">复制</button>
+</div>
+<div class="row">
+    <span class="text">20. 暑期快乐到压力往后倒</span>
+    <button class="copy-btn" data-text="暑期快乐到压力往后倒">复制</button>
+</div>
+<div class="row">
+    <span class="text">21. 热情胜过酷暑的天气</span>
+    <button class="copy-btn" data-text="热情胜过酷暑的天气">复制</button>
+</div>
+<div class="row">
+    <span class="text">22. 放暑期啦给心情也放个假</span>
+    <button class="copy-btn" data-text="放暑期啦给心情也放个假">复制</button>
+</div>
+<div class="row">
+    <span class="text">23. 这个暑期给放三2充电呀</span>
+    <button class="copy-btn" data-text="这个暑期给放三2充电呀">复制</button>
+</div>
+<div class="row">
+    <span class="text">24. 快乐暑期和我一起变强</span>
+    <button class="copy-btn" data-text="快乐暑期和我一起变强">复制</button>
+</div>
+<div class="row">
+    <span class="text">25. 何以消烦暑</span>
+    <button class="copy-btn" data-text="何以消烦暑">复制</button>
+</div>
+<div class="row">
+    <span class="text">26. 端坐一院中</span>
+    <button class="copy-btn" data-text="端坐一院中">复制</button>
+</div>
+<div class="row">
+    <span class="text">27. 眼前无长物</span>
+    <button class="copy-btn" data-text="眼前无长物">复制</button>
+</div>
+<div class="row">
+    <span class="text">28. 窗下有清风</span>
+    <button class="copy-btn" data-text="窗下有清风">复制</button>
+</div>
+<div class="row">
+    <span class="text">29. 懒摇白羽扇</span>
+    <button class="copy-btn" data-text="懒摇白羽扇">复制</button>
+</div>
+<div class="row">
+    <span class="text">30. 裸袒青林中</span>
+    <button class="copy-btn" data-text="裸袒青林中">复制</button>
+</div>
+<div class="row">
+    <span class="text">31. 散发乘夕凉</span>
+    <button class="copy-btn" data-text="散发乘夕凉">复制</button>
+</div>
+<div class="row">
+    <span class="text">32. 开轩卧闲敞</span>
+    <button class="copy-btn" data-text="开轩卧闲敞">复制</button>
+</div>
+<div class="row">
+    <span class="text">33. 荷风送香气</span>
+    <button class="copy-btn" data-text="荷风送香气">复制</button>
+</div>
+<div class="row">
+    <span class="text">34. 竹露滴清响</span>
+    <button class="copy-btn" data-text="竹露滴清响">复制</button>
+</div>
+<div class="row">
+    <span class="text">35. 僧舍清凉竹树新</span>
+    <button class="copy-btn" data-text="僧舍清凉竹树新">复制</button>
+</div>
+<div class="row">
+    <span class="text">36. 初经一雨洗诸尘</span>
+    <button class="copy-btn" data-text="初经一雨洗诸尘">复制</button>
+</div>
+<div class="row">
+    <span class="text">37. 微风忽起吹莲叶</span>
+    <button class="copy-btn" data-text="微风忽起吹莲叶">复制</button>
+</div>
+<div class="row">
+    <span class="text">38. 青玉盘中泻水银</span>
+    <button class="copy-btn" data-text="青玉盘中泻水银">复制</button>
+</div>
+<div class="row">
+    <span class="text">39. 风蒲猎猎小池塘</span>
+    <button class="copy-btn" data-text="风蒲猎猎小池塘">复制</button>
+</div>
+<div class="row">
+    <span class="text">40. 过雨荷花满院香</span>
+    <button class="copy-btn" data-text="过雨荷花满院香">复制</button>
+</div>
+<div class="row">
+    <span class="text">41. 沈李浮瓜冰雪凉</span>
+    <button class="copy-btn" data-text="沈李浮瓜冰雪凉">复制</button>
+</div>
+<div class="row">
+    <span class="text">42. 南风不用蒲葵扇</span>
+    <button class="copy-btn" data-text="南风不用蒲葵扇">复制</button>
+</div>
+<div class="row">
+    <span class="text">43. 纱帽闲眠对水鸥</span>
+    <button class="copy-btn" data-text="纱帽闲眠对水鸥">复制</button>
+</div>
+<div class="row">
+    <span class="text">44. 尽室林塘涤暑烦</span>
+    <button class="copy-btn" data-text="尽室林塘涤暑烦">复制</button>
+</div>
+<div class="row">
+    <span class="text">45. 旷然如不在尘寰</span>
+    <button class="copy-btn" data-text="旷然如不在尘寰">复制</button>
+</div>
+<div class="row">
+    <span class="text">46. 谁人敢议清风价</span>
+    <button class="copy-btn" data-text="谁人敢议清风价">复制</button>
+</div>
+<div class="row">
+    <span class="text">47. 无乐能过百日闲</span>
+    <button class="copy-btn" data-text="无乐能过百日闲">复制</button>
+</div>
+<div class="row">
+    <span class="text">48. 烈日炎炎嗨翻天</span>
+    <button class="copy-btn" data-text="烈日炎炎嗨翻天">复制</button>
+</div>
+<div class="row">
+    <span class="text">49. 清凉有夏暑中有你</span>
+    <button class="copy-btn" data-text="清凉有夏暑中有你">复制</button>
+</div>
+<div class="row">
+    <span class="text">50. 祝大家暑期快乐</span>
+    <button class="copy-btn" data-text="祝大家暑期快乐">复制</button>
+</div>
+            <!-- ...其他条目... -->
+        </div>
+    </div>
+
+    <!-- 复制辅助元素 -->
+    <textarea id="copyHelper"></textarea>
+
+    <script>
+        // 优化后的复制函数
+        function copyText(button) {
+            const text = button.dataset.text;
+            const helper = document.getElementById('copyHelper');
+            
+            // 方法1：现代API
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(text).then(() => {
+                    showFeedback(button);
+                }).catch(() => {
+                    useFallbackCopy(helper, text, button);
+                });
+            } 
+            // 方法2：传统方法
+            else {
+                useFallbackCopy(helper, text, button);
+            }
+        }
+
+        function useFallbackCopy(helper, text, button) {
+            helper.value = text;
+            helper.select();
+            try {
+                document.execCommand('copy');
+                showFeedback(button);
+            } catch (err) {
+                alert('自动复制失败，请手动长按选中文本进行复制');
+            }
+        }
+
+        function showFeedback(button) {
+            button.classList.add('copied');
+            button.textContent = '已复制 ✓';
+            setTimeout(() => {
+                button.classList.remove('copied');
+                button.textContent = '复制';
+            }, 1500);
+        }
+
+        // 事件委托处理点击
+        document.getElementById('blessingsContainer').addEventListener('click', (e) => {
+            if (e.target.classList.contains('copy-btn')) {
+                copyText(e.target);
+            }
+        });
+    </script>
+</body>
+</html>
